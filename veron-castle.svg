@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#241a10"/><stop offset="1" stop-color="#090806"/></linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#302519"/><stop offset="1" stop-color="#0b0907"/></linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#766348"/><stop offset="1" stop-color="#2a2118"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8c6a35"/><stop offset=".5" stop-color="#e2c47c"/><stop offset="1" stop-color="#8c6a35"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1260" cy="175" r="85" fill="#c9a45c" opacity=".10"/>
+  <path d="M0 500 L250 300 L430 470 L650 260 L900 470 L1110 310 L1400 500 L1600 380 V900 H0Z" fill="#17120d"/>
+  <path d="M0 610 Q360 520 800 600 T1600 560 V900 H0Z" fill="url(#ground)"/>
+  <ellipse cx="800" cy="735" rx="580" ry="85" fill="#000" opacity=".55" filter="url(#shadow)"/>
+  <!-- outer wall -->
+  <path d="M300 700 L365 470 L570 390 L1030 390 L1235 470 L1300 700 L1100 770 L500 770Z" fill="url(#stone)" stroke="#b08a4d" stroke-width="5"/>
+  <path d="M365 520 L570 450 L1030 450 L1235 520" fill="none" stroke="#d1ad66" stroke-opacity=".35" stroke-width="5"/>
+  <!-- towers -->
+  <g stroke="#b08a4d" stroke-width="5" fill="url(#stone)">
+    <path d="M330 430 L330 700 L480 700 L480 420 L405 345Z"/>
+    <path d="M1120 420 L1120 700 L1270 700 L1270 430 L1195 345Z"/>
+    <path d="M620 385 L620 690 L780 690 L780 385 L700 315Z"/>
+    <path d="M820 385 L820 690 L980 690 L980 385 L900 315Z"/>
+  </g>
+  <!-- roofs -->
+  <g fill="#100d09" stroke="#d2ad63" stroke-width="4">
+    <path d="M315 430 L405 315 L495 430Z"/>
+    <path d="M1105 430 L1195 315 L1285 430Z"/>
+    <path d="M605 385 L700 275 L795 385Z"/>
+    <path d="M805 385 L900 275 L995 385Z"/>
+  </g>
+  <!-- battlements -->
+  <path d="M475 535 H1125 V600 H475Z" fill="#443626" stroke="#b08a4d" stroke-width="4"/>
+  <g fill="#b08a4d">
+    <path d="M485 515h45v30h-45zM565 515h45v30h-45zM645 515h45v30h-45zM725 515h45v30h-45zM805 515h45v30h-45zM885 515h45v30h-45zM965 515h45v30h-45zM1045 515h45v30h-45z"/>
+  </g>
+  <!-- windows -->
+  <g fill="#080705" stroke="#d2ad63" stroke-width="3">
+    <path d="M375 520 h45 v75 h-45z"/><path d="M1160 520 h45 v75 h-45z"/>
+    <path d="M665 430 h45 v85 h-45z"/><path d="M865 430 h45 v85 h-45z"/>
+  </g>
+  <!-- gate -->
+  <path d="M665 770 V615 Q800 500 935 615 V770Z" fill="#0b0907" stroke="#d2ad63" stroke-width="6"/>
+  <path d="M800 540 V770" stroke="#8f6e3c" stroke-width="4" opacity=".6"/>
+  <path d="M690 650 Q800 570 910 650" fill="none" stroke="#8f6e3c" stroke-width="4" opacity=".6"/>
+  <!-- banner -->
+  <path d="M800 230 V420" stroke="#d2ad63" stroke-width="6"/>
+  <path d="M805 250 L920 275 L805 355Z" fill="#7b2119" stroke="#d2ad63" stroke-width="4"/>
+  <path d="M840 280 l12 25 28 3-21 18 7 27-26-14-25 14 7-27-21-18 28-3z" fill="#e0c27c" opacity=".9"/>
+  <!-- road -->
+  <path d="M690 900 Q730 800 800 760 Q870 800 910 900" fill="#4a3826" opacity=".8"/>
+  <!-- frame -->
+  <rect x="22" y="22" width="1556" height="856" fill="none" stroke="#b08a4d" stroke-width="3" opacity=".65"/>
+  <rect x="38" y="38" width="1524" height="824" fill="none" stroke="#b08a4d" stroke-width="1" opacity=".3"/>
+  <text x="800" y="120" text-anchor="middle" fill="#ead9b7" font-family="Georgia,serif" font-size="54" letter-spacing="14">VERON KALESİ</text>
+  <text x="800" y="165" text-anchor="middle" fill="#b08a4d" font-family="Georgia,serif" font-size="18" letter-spacing="7">ROTHAD SAVUNMA HATTI</text>
+</svg>
