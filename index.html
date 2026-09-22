@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rothad Hanesi — Sargoth Baronluğu</title>
+<meta name="description" content="Rothad Hanesi — Sargoth Baronluğu resmi hane sitesi.">
+<style>
+
+:root{--bg:#090806;--panel:#0f0d0a;--panel2:#17120d;--gold:#c99b42;--gold2:#f1d487;--cream:#eadfc8;--muted:#aaa08e;--line:rgba(201,155,66,.38);--red:#6e1817;--red2:#9b2721;--serif:Cinzel,Georgia,serif;--sans:Inter,Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--cream);background:#070604;font-family:var(--sans);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.045;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:5px 5px}
+body:after{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(rgba(7,6,4,.84),rgba(7,6,4,.94)),url("assets/sargoth-haritasi.webp") center/cover fixed;filter:saturate(.75) contrast(1.05)}
+a{text-decoration:none;color:inherit}.wrap{width:min(1240px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:74px;background:rgba(6,5,4,.91);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+.nav{height:100%;display:flex;align-items:center;gap:20px}.brand{display:flex;align-items:center;gap:10px;min-width:230px}
+.brand img{width:46px;height:46px;object-fit:cover;border:1px solid var(--gold);background:#111}
+.brand strong{font:700 14px var(--serif);letter-spacing:.13em}.brand small{display:block;color:var(--gold2);font-size:7px;letter-spacing:.24em;margin-top:1px}
+.links{display:flex;gap:19px;margin-left:auto;font-size:9px;letter-spacing:.11em;text-transform:uppercase}.links a:hover{color:var(--gold2)}
+.btn{display:inline-flex;padding:11px 16px;border:1px solid var(--line);background:rgba(12,10,7,.8);font:600 9px var(--serif);letter-spacing:.14em;text-transform:uppercase}.btn:hover{border-color:var(--gold);transform:translateY(-1px)}.btn.primary{background:linear-gradient(135deg,#7b1d18,#3c100d);border-color:#b98647}
+.hero{padding:125px 0 45px;min-height:850px;position:relative;display:flex;align-items:end}.hero-map{position:absolute;inset:74px 0 0;background:linear-gradient(90deg,rgba(6,5,4,.94) 0%,rgba(6,5,4,.5) 45%,rgba(6,5,4,.78) 100%),url("assets/sargoth-haritasi.webp") center/cover;opacity:.96;z-index:-1}.hero-inner{padding:60px 0 10px;max-width:600px}
+.crest{width:92px;height:92px;object-fit:cover;border:1px solid var(--gold);padding:5px;background:#090806;margin-bottom:20px}
+.kicker{color:var(--gold2);font-size:9px;letter-spacing:.28em;text-transform:uppercase}.hero h1{font:800 clamp(45px,7vw,86px)/.91 var(--serif);letter-spacing:.03em;margin:10px 0;text-transform:uppercase;text-shadow:0 10px 35px #000}.hero h2{font:600 17px var(--serif);letter-spacing:.38em;color:var(--gold2);margin:15px 0}.motto{font:italic 18px Georgia;color:#dccaa3}.hero p{color:#c0b7a4;max-width:570px;margin:16px 0}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+section{padding:88px 0;border-top:1px solid rgba(201,155,66,.16)}.head{max-width:780px;margin-bottom:32px}.head h2{font:700 clamp(32px,5vw,55px)/1.05 var(--serif);margin:7px 0 12px}.head p{color:var(--muted);max-width:690px}.rule{height:1px;width:100px;background:linear-gradient(90deg,var(--gold),transparent);margin:15px 0}
+.panel{background:linear-gradient(145deg,rgba(20,16,11,.94),rgba(8,7,5,.94));border:1px solid var(--line);box-shadow:0 25px 80px rgba(0,0,0,.32)}
+.intro{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}.story{padding:32px}.story p{color:#c9c1b0}.quote{border-left:2px solid var(--gold);padding:13px 18px;margin:20px 0;background:linear-gradient(90deg,rgba(201,155,66,.09),transparent);font:italic 19px Georgia;color:var(--gold2)}
+.story-art{min-height:530px;background:url("assets/rothad-sancak.webp") center/cover;position:relative}.story-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78))}
+.story-art div{position:absolute;bottom:25px;left:25px;z-index:2}.story-art h3{font:700 35px var(--serif);margin:5px 0}.story-art p{margin:0;color:#d8c9aa}
+.members{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.member{background:#0b0907;border:1px solid var(--line);overflow:hidden;cursor:pointer;transition:.2s}.member:hover{transform:translateY(-5px);border-color:var(--gold)}.member img{width:100%;height:260px;object-fit:cover;object-position:center top;display:block;background:#15100b}.member-info{padding:13px}.member-info small{color:var(--gold2);font-size:8px;letter-spacing:.16em}.member-info h3{font:600 15px/1.2 var(--serif);margin:5px 0}.member-info p{font-size:9px;color:#948c7d}
+.territories{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.territory{min-height:270px;position:relative;overflow:hidden;border:1px solid var(--line);background:#0b0907}.territory img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.57);transition:.35s}.territory:hover img{transform:scale(1.05);filter:brightness(.72)}.territory:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.93),transparent 62%)}.territory-copy{position:absolute;z-index:2;left:17px;right:17px;bottom:16px}.territory-copy h3{font:600 23px var(--serif);margin:4px 0}.territory-copy p{font-size:10px;color:#c6bdac;margin:0}
+.map{overflow:hidden}.map img{display:block;width:100%;height:auto}.map-note{padding:14px 18px;color:#99907f;font-size:10px;border-top:1px solid var(--line)}
+.feature-img{width:100%;display:block}.tier-wrap{display:grid;grid-template-columns:1fr .65fr;gap:18px;align-items:start}.tier-wrap .panel{overflow:hidden}.tier-wrap img{width:100%;display:block}.schedule-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px;align-items:start}.schedule img{width:100%;display:block}.schedule-copy{padding:30px}.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:20px}.day{border:1px solid var(--line);padding:12px 5px;text-align:center;background:#0e0b08}.day b{display:block;font:600 10px var(--serif);color:var(--gold2)}.day span{display:block;font-size:8px;color:#aaa08f;margin-top:5px}.day strong{display:block;color:#eee0c2;font:600 11px var(--serif);margin-top:9px}
+.laws{display:grid;grid-template-columns:260px 1fr;gap:18px}.law-nav{padding:16px}.law-btn{display:block;width:100%;padding:13px 12px;margin-bottom:7px;text-align:left;color:#bbb19f;background:#0d0b08;border:1px solid var(--line);cursor:pointer;font:600 9px var(--serif);letter-spacing:.1em}.law-btn.active{background:#4a130f;border-color:#b17d43;color:#fff}.law-panel{padding:30px}.law-panel h3{font:600 29px var(--serif);color:var(--gold2)}.law-panel li,.law-panel p{color:#c3baaa;font-size:13px}.law-panel li{margin:7px 0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.gallery figure{margin:0;border:1px solid var(--line);background:#0a0806;overflow:hidden}.gallery img{width:100%;display:block}.gallery figcaption{padding:11px 13px;color:#aaa08f;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+footer{padding:35px 0;border-top:1px solid var(--line);text-align:center;color:#81796b;font-size:9px;letter-spacing:.16em}.gold{color:var(--gold2)}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.82);backdrop-filter:blur(9px);display:none;place-items:center;z-index:200;padding:20px}.modal-bg.open{display:grid}.modal{width:min(600px,100%);background:#100d09;border:1px solid var(--gold);padding:24px;position:relative}.modal img{width:100%;height:360px;object-fit:cover;object-position:center top;background:#16100b}.modal h3{font:600 28px var(--serif);margin:12px 0 4px}.modal .role{font-size:9px;letter-spacing:.2em;color:var(--gold2)}.modal p{color:#c2b9a8}.close{position:absolute;right:9px;top:4px;border:0;background:none;color:var(--gold2);font-size:28px;cursor:pointer;z-index:2}
+.menu{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--gold2);padding:7px 10px}
+@media(max-width:1050px){.members{grid-template-columns:repeat(2,1fr)}.links{display:none}.menu{display:block}.members{grid-template-columns:repeat(2,1fr)}.territories{grid-template-columns:repeat(2,1fr)}.intro,.tier-wrap,.schedule-wrap,.laws{grid-template-columns:1fr}}
+@media(max-width:650px){.brand{min-width:0}.brand strong{font-size:11px}.hero{min-height:720px}.hero-inner{padding-top:30px}.members{grid-template-columns:repeat(2,1fr)}.territories,.gallery{grid-template-columns:1fr}.days{grid-template-columns:repeat(2,1fr)}section{padding:65px 0}.member img{height:220px}.story{padding:23px}.story-art{min-height:390px}}
+
+.viserys-art{height:260px;background:
+radial-gradient(circle at 50% 36%,#5e4630 0 14%,transparent 14.5%),
+radial-gradient(ellipse at 50% 53%,#211b15 0 29%,transparent 29.5%),
+linear-gradient(160deg,#2a241d,#090806 65%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:24px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.viserys-art:before{content:"";position:absolute;width:120px;height:120px;border:1px solid rgba(201,155,66,.5);transform:rotate(45deg);top:65px;opacity:.7}
+.viserys-art span{position:relative;z-index:1;font:800 72px var(--serif);color:var(--gold2);text-shadow:0 4px 18px #000}
+.viserys-art small{position:relative;z-index:1;color:var(--gold2);font:600 8px var(--serif);letter-spacing:.2em}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+<a class="brand" href="#anasayfa"><img src="assets/rothad-sancak.webp" alt="Rothad Sancağı"><span><strong>ROTHAD HANESİ</strong><small>SARGOTH BARONLUĞU</small></span></a>
+<div class="links"><a href="#anasayfa">Ana Sayfa</a><a href="#hanemiz">Hanemiz</a><a href="#uyeler">Üyeler</a><a href="#topraklar">Topraklar</a><a href="#takvim">Takvim</a><a href="#yasalar">Yasalar</a><a href="#galeri">Galeri</a></div>
+<a class="btn primary" href="https://discord.gg/uGWhqzA2U" target="_blank">Discord'a Katıl</a><button class="menu" id="menu">☰</button>
+</div></nav>
+
+<header class="hero" id="anasayfa"><div class="hero-map"></div><div class="wrap hero-inner">
+<div class="kicker">VLANDIA KRALLIĞI · SARGOTH · DEY ROTHAD</div>
+<img class="crest" src="assets/rothad-sancak.webp" alt="Rothad Hanesi Sancağı">
+<h1>Sargoth'un<br>Gücü</h1><h2>ROTHAD'IN MİRASI</h2><div class="motto">“Toprak · Halk · Onur · Daima.”</div>
+<p>Sargoth Baronluğu ve bağlı toprakların resmi hane arşivi. Rothad Hanesi'nin sancağı altında; hane üyeleri, kaleler, köyler, yasalar ve haftalık faaliyetler tek bir yerde.</p>
+<div class="actions"><a class="btn primary" href="#hanemiz">Hanemizi Keşfet →</a><a class="btn" href="#topraklar">Topraklarımız</a></div>
+</div></header>
+
+<section id="hanemiz"><div class="wrap"><div class="head"><div class="kicker">01 · HANEMİZ</div><h2>Bir sancak, bir hane, bir miras.</h2><div class="rule"></div><p>Rothad Hanesi'nin hikâyesi; Sargoth'un toprakları, halkı ve sadakatiyle birlikte yaşar.</p></div>
+<div class="intro"><article class="panel story">
+<p>Krallığın en uç noktasında, rüzgârın bile temkinli estiği sert sınır hattında Sargoth yükselir. Her mevsim başka bir ordunun gölgesi düşse de kaleyi ayakta tutan asıl güç taş değil, sadakattir.</p>
+<p>Hanenin mührü yalnızca bir arma değildir; verilen sözün, görevin ve onurun işaretidir. Rothad Hanesi'nin yolu Sargoth'un geleceğini korumak, bağlı toprakları güçlendirmek ve hane adını onurla taşımaktır.</p>
+<div class="quote">“Rothad’ın kapıları korkuyla açılmaz.”</div>
+<p><b class="gold">Brémond dey Rothad</b> hanenin beyidir. Onun çevresinde Murolas dey Veron'un özel makamı, Reeve Viserys ve diğer hane görevlileri bulunur.</p>
+</article>
+<aside class="panel story-art"><div><div class="kicker">ROTHAD HANESİ</div><h3>Bir sancak altında.</h3><p>Sargoth için · Vlandia için.</p></div></aside></div></div></section>
+
+<section id="uyeler"><div class="wrap"><div class="head"><div class="kicker">02 · HANE SİCİLİ</div><h2>Hanenin insanları.</h2><div class="rule"></div><p>Gönderdiğin karakter görselleri, metinlerinden ayrıştırılmış portre odaklı kartlarda kullanılıyor.</p></div>
+<div class="panel" style="padding:12px 15px;margin-bottom:14px;border-color:rgba(201,155,66,.28)"><span class="gold" style="font:600 9px var(--serif);letter-spacing:.12em">HANE KADROSU</span><span style="font-size:10px;color:#a9a091"> · Brémond · Murolas · Viserys (Reeve) · Lenox · Esdichna · Vlamond</span></div>
+<div class="members">
+<article class="member" data-name="Brémond dey Rothad" data-role="Baron" data-text="Rothad Hanesi'nin beyi ve Sargoth Baronluğu'nun lideri."><img src="assets/bremond-portre.webp" alt="Brémond dey Rothad"><div class="member-info"><small>BARON</small><h3>Brémond dey Rothad</h3><p>Hanenin beyi</p></div></article>
+<article class="member" data-name="Murolas dey Veron" data-role="Baronun Eli · Özel Makam" data-text="Baron Brémond dey Rothad'ın altında yer alan, normal Reeve makamından ayrı özel yetki ve sorumluluk taşıyan makam."><img src="assets/murolas-portre.webp" alt="Murolas dey Veron"><div class="member-info"><small>BARONUN ELİ</small><h3>Murolas dey Veron</h3><p>Özel yetki makamı</p></div></article>
+<article class="member" data-name="Chief Lenox de Etirburg" data-role="Chief" data-text="Etirburg'un hane içindeki sorumlusu ve bağlı toprağın temsilcisi."><img src="assets/lenox-portre.webp" alt="Chief Lenox de Etirburg"><div class="member-info"><small>CHIEF</small><h3>Lenox de Etirburg</h3><p>Etirburg sorumlusu</p></div></article>
+<article class="member" data-name="Chief Esdichna dey Calioc" data-role="Chief" data-text="Calioc'un hane içindeki sorumlusu ve bağlı toprağın temsilcisi."><img src="assets/esdichna-portre.webp" alt="Chief Esdichna dey Calioc"><div class="member-info"><small>CHIEF</small><h3>Esdichna dey Calioc</h3><p>Calioc sorumlusu</p></div></article>
+<article class="member" data-name="Vlamond" data-role="Head Officer" data-text="Rothad Hanesi'nin Head Officer makamındaki mensubu."><img src="assets/vlamond-orijinal.webp" alt="Vlamond"><div class="member-info"><small>HEAD OFFICER</small><h3>Vlamond</h3><p>Hane subay yapılanması</p></div></article>
+<article class="member" data-name="Viserys" data-role="Reeve" data-text="Rothad Hanesi'nin Reeve rütbesine sahip mensubu.">
+  <div class="viserys-art" aria-label="Viserys portre alanı"><span>V</span><small>REEVE</small></div>
+  <div class="member-info"><small>REEVE</small><h3>Viserys</h3><p>Hane Reeve'i</p></div>
+</article>
+
+</div>
+<div class="panel" style="margin-top:13px;padding:18px"><span class="kicker">DİĞER HANE MAKAMLARI</span><p style="margin:8px 0 0;color:#b7ad9b;font-size:12px">Reeve <b class="gold">Viserys</b> · Chief <b class="gold">Lenox de Etirburg</b> · Chief <b class="gold">Esdichna dey Calioc</b> · Esquire <b class="gold">Tashkun</b> · Officer <b class="gold">Kenshi</b> · Officer <b class="gold">Pekarkos</b> · Officer <b class="gold">Vasilius</b></p></div>
+</div></section>
+
+<section id="topraklar"><div class="wrap"><div class="head"><div class="kicker">03 · TOPRAKLARIMIZ</div><h2>Sargoth ve bağlı kaleler.</h2><div class="rule"></div><p><b class="gold">Veron Kalesi</b> artık açıkça Rothad Hanesi'nin kendi kalesi olarak hane toprakları arasında yer alıyor.</p></div>
+<div class="territories">
+<article class="territory"><img src="assets/sargoth-bolge.webp"><div class="territory-copy"><div class="kicker">BARONLUĞUN MERKEZİ</div><h3>Sargoth Baronluğu</h3><p>Hanenin ana merkezi ve yönetim alanı.</p></div></article>
+<article class="territory"><img src="assets/veron-bolge.webp"><div class="territory-copy"><div class="kicker">ROTHAD KALESİ</div><h3>Veron Kalesi</h3><p>Rothad Hanesi'ne ait kale ve stratejik merkez.</p></div></article>
+<article class="territory"><img src="assets/etirburg-bolge.webp"><div class="territory-copy"><div class="kicker">BAĞLI KÖY</div><h3>Etirburg</h3><p>Demir yatakları ve sınır üretimiyle öne çıkan köy.</p></div></article>
+<article class="territory"><img src="assets/calioc-bolge.webp"><div class="territory-copy"><div class="kicker">BAĞLI KÖY</div><h3>Calioc</h3><p>Keten üretimi ve tarımsal emeğiyle bilinen köy.</p></div></article>
+</div>
+<div class="panel map" style="margin-top:18px"><img src="assets/sargoth-haritasi.webp" alt="Sargoth Baronluğu ve bağlı köylerin yol haritası"><div class="map-note">Rothad Hanesi'nin resmi bölge haritası · Etirburg · Calioc · Veron Kalesi · Bremond Kışlası · Sargoth Baronluğu</div></div>
+</div></section>
+
+<section id="takvim"><div class="wrap"><div class="head"><div class="kicker">04 · HAFTALIK TAKVİM</div><h2>Hanenin haftası.</h2><div class="rule"></div><p>Gönderdiğin haftalık takvim görseli siteye doğrudan eklenmiştir; ayrıca içerik kartlarıyla okunabilir hale getirilmiştir.</p></div>
+<div class="schedule-wrap"><div class="panel schedule"><img src="assets/haftalik-takvim.webp" alt="Sargoth Hanesi haftalık takvim"></div>
+<div class="panel schedule-copy"><div class="kicker">21 — 27 EYLÜL</div><h3 style="font:600 31px var(--serif);margin:8px 0 10px">Haftalık Program</h3>
+<div class="days">
+<div class="day"><b>21 EYLÜL</b><span>PAZARTESİ</span><strong>EĞİTİM</strong></div>
+<div class="day"><b>22 EYLÜL</b><span>SALI</span><strong>LOTR EVENT</strong></div>
+<div class="day"><b>23 EYLÜL</b><span>ÇARŞAMBA</span><strong>BOŞ GÜN</strong></div>
+<div class="day"><b>24 EYLÜL</b><span>PERŞEMBE</span><strong>ORDER PK</strong></div>
+<div class="day"><b>25 EYLÜL</b><span>CUMA</span><strong>BOŞ GÜN</strong></div>
+<div class="day"><b>26 EYLÜL</b><span>CUMARTESİ</span><strong>OTTOMAN EVENT</strong></div>
+<div class="day"><b>27 EYLÜL</b><span>PAZAR</span><strong>PUBG TURNUVASI</strong></div>
+</div>
+<div class="quote" style="margin-top:22px">“Sargoth'un sancağı altında birlik, onurun altında zafer.”</div>
+</div></div></div></section>
+
+<section><div class="wrap"><div class="head"><div class="kicker">05 · TIER SİSTEMİ</div><h2>Disiplin, sadakat ve emek.</h2><div class="rule"></div><p>Gönderdiğin Tier Sistemi görseli, hane eğitim ve rütbe yapısının görsel kaynağı olarak korunmuştur.</p></div>
+<div class="tier-wrap"><div class="panel"><img src="assets/tier-sistemi.webp" alt="Sargoth Tier Sistemi"></div><div class="panel story"><h3 style="font:600 28px var(--serif);margin-top:0">Sargoth Hanesi</h3><p>Tier sistemi; askerin yeteneğine, katkısına, disiplinine ve görevlerde gösterdiği performansa göre ilerleyen bir yapı olarak sunuluyor.</p><div class="quote">“Daha güçlü bir yarın, daha güçlü bir Sargoth.”</div><p>Bu bölümde görseldeki eğitim düzenini bozmadan, sitenin geri kalanıyla aynı Rothad/Sargoth görsel dili kullanılıyor.</p></div></div></div></section>
+
+<section id="yasalar"><div class="wrap"><div class="head"><div class="kicker">06 · YASALAR</div><h2>Hanenin kanunu.</h2><div class="rule"></div><p>Hane düzeni; Krallığa sadakat, hane onuru, görev bilinci, adalet ve dayanışma üzerine kuruludur.</p></div>
+<div class="laws"><aside class="panel law-nav"><button class="law-btn active" data-law="general">GENEL YASALAR</button><button class="law-btn" data-law="principles">DEY ROTHAD TEMEL İLKELERİ</button></aside>
+<div class="panel law-panel"><div class="law-content" id="general"><h3>Genel Yasalar</h3><p><b class="gold">ANA KURAL:</b> Önce Krala, sonra Krallığa, son olarak hanelerimize sadakat. Esas bağlılık Kraladır.</p><ol>
+<li>Krallığın kuralları herkes tarafından biliniyor kabul edilir.</li><li>Rahatsız edici argo, hakaret ve kişileri hedef alan davranışlar yasaktır.</li><li>Ses kanallarında gereksiz ve rahatsız edici ses paneli kullanımı yasaktır.</li><li>Yazı ve ses kanallarında herkese açık tartışma yürütülmez.</li><li>Sohbette saygılı ve seviyeli olunacaktır.</li><li>Dramalara dahil olmak veya dramaları uzatmak yasaktır.</li><li>Yaş, din, dil, ırk veya siyasi görüş üzerinden dışlama ve hakaret yasaktır.</li><li>Tarihi Türk büyüklerine yönelik hakaret içerikli paylaşımlar yasaktır.</li><li>Sesli veya yazılı kanallarda siyasi tartışma yapılması yasaktır.</li><li>Hiyerarşi herkese açık kanallarda tartışılmaz; şikayet için ticket kullanılabilir.</li><li>Savaş sırasında gereksiz konuşmalar yasaktır.</li><li>Kasten TK, toxiclik veya trollük yasaktır.</li><li>Etkinlik sırasında genel sohbet kullanımı yasaktır.</li><li>Özel etkinliklerde ve gündelik sunucularda örnek davranış zorunludur.</li><li>Yetkili bilgisi/izni dışında etkinliklerde klan tagı bulundurulmaz.</li></ol></div>
+<div class="law-content" id="principles" style="display:none"><h3>Dey Rothad Temel İlkeleri</h3><h4>I. Sadakat ve Bağlılık</h4><p>Vlandia Krallığına sadakat korunur; bağlı hanelere hürmet edilir ve Rothad Hanesi mensupları onların refahını gözetir.</p><h4>II. Saygı ve Onur</h4><p>Hane dostlarına ve rakiplerine saygı gösterilir; hane onurunu zedeleyecek sözlerden sakınılır.</p><h4>III. Görev Bilinci ve Sorumluluk</h4><p>Üstlenilen görev eksiksiz yerine getirilir; hane disiplini ve verilen talimatlara bağlılık esastır.</p><h4>IV. Adalet ve Tarafsızlık</h4><p>Yargılara kişisel çıkarlar karıştırılmaz; anlaşmazlıklarda adalet ve doğruluk gözetilir.</p><h4>V. İletişim ve Dayanışma</h4><p>Hane mensupları birbirine destek olur; emirler ve planlar açık biçimde paylaşılır.</p></div></div></div></div></section>
+
+<section id="galeri"><div class="wrap"><div class="head"><div class="kicker">07 · GALERİ</div><h2>Rothad'ın görsel arşivi.</h2><div class="rule"></div><p>Gönderdiğin özgün çalışmaların tamamı, sitenin tasarım dili bozulmadan arşiv bölümünde saklanıyor.</p></div>
+<div class="gallery">
+<figure><img src="assets/bremond-orijinal.webp" alt="Brémond dey Rothad"><figcaption>Brémond dey Rothad · Hane kroniği</figcaption></figure>
+<figure><img src="assets/lenox-orijinal.webp" alt="Lenox de Etirburg"><figcaption>Chief Lenox de Etirburg · Hane kroniği</figcaption></figure>
+<figure><img src="assets/esdichna-orijinal.webp" alt="Esdichna dey Calioc"><figcaption>Chief Esdichna dey Calioc · Hane kroniği</figcaption></figure>
+<figure><img src="assets/vlamond-orijinal.webp" alt="Vlamond"><figcaption>Vlamond · Head Officer</figcaption></figure>
+<figure><img src="assets/murolas-portre.webp" alt="Murolas dey Veron"><figcaption>Murolas dey Veron · Özel makam</figcaption></figure>
+<figure><img src="assets/tier-sistemi.webp" alt="Tier Sistemi"><figcaption>Sargoth Tier Sistemi</figcaption></figure>
+</div></div></section>
+
+<section><div class="wrap"><div class="panel" style="padding:48px;text-align:center;background:linear-gradient(145deg,rgba(105,20,17,.72),rgba(12,10,7,.96))"><div class="kicker">ROTHAD MÜHRÜ</div><h2 style="font:700 clamp(32px,5vw,58px) var(--serif);margin:8px 0;color:var(--gold2)">Mertlik Kanundur.</h2><p style="font:italic 18px Georgia;color:#d6c6a6">Söz kalkandır.</p><a class="btn primary" href="https://discord.gg/uGWhqzA2U" target="_blank" style="margin-top:16px">Hane Karargâhına Katıl →</a></div></div></section>
+<footer><div class="wrap"><b class="gold">ROTHAD HANESİ</b> · SARGOTH BARONLUĞU · TOPRAK · HALK · ONUR · DAİMA</div></footer>
+
+<div class="modal-bg" id="modal"><div class="modal"><button class="close" id="close">×</button><img id="modalImg" src=""><div class="role" id="modalRole"></div><h3 id="modalTitle"></h3><p id="modalText"></p></div></div>
+<script>
+const modal=document.getElementById('modal'),img=document.getElementById('modalImg'),title=document.getElementById('modalTitle'),role=document.getElementById('modalRole'),txt=document.getElementById('modalText');
+document.querySelectorAll('.member').forEach(c=>c.addEventListener('click',()=>{img.src=c.querySelector('img').src;title.textContent=c.dataset.name;role.textContent=c.dataset.role.toUpperCase();txt.textContent=c.dataset.text;modal.classList.add('open');document.body.style.overflow='hidden'}));
+document.getElementById('close').onclick=()=>{modal.classList.remove('open');document.body.style.overflow=''};modal.addEventListener('click',e=>{if(e.target===modal)document.getElementById('close').click()});document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('close').click()});
+document.querySelectorAll('.law-btn').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.law-btn').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.law-content').forEach(x=>x.style.display='none');b.classList.add('active');document.getElementById(b.dataset.law).style.display='block'}));
+const menu=document.getElementById('menu'),links=document.querySelector('.links');menu.onclick=()=>{links.style.display=links.style.display==='flex'?'none':'flex';links.style.position='absolute';links.style.top='74px';links.style.left='0';links.style.right='0';links.style.padding='18px 6%';links.style.background='#090806';links.style.flexDirection='column'};
+</script>
+</body>
+</html>
